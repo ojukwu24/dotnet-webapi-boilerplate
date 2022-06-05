@@ -8,7 +8,7 @@ namespace FSH.WebApi.Host.Controllers.Catalog;
 public class UnitsOfMeasurementController : VersionedApiController
 {
     [HttpPost("search")]
-    [MustHavePermission(FSHAction.Search, FSHResource.UnitsOfMeasurement)]
+    [MustHavePermission(FSHAction.Search, FSHResource.UnitsOfMeasurements)]
     [OpenApiOperation("Search Unit of Measurements using using available filters.", "")]
     public Task<PaginationResponse<UnitOfMeasurementDto>> SearchAsync(SearchUnitOfMeasurementRequest request)
     {
@@ -16,7 +16,7 @@ public class UnitsOfMeasurementController : VersionedApiController
     }
 
     [HttpGet("{id:guid}")]
-    [MustHavePermission(FSHAction.View, FSHResource.UnitsOfMeasurement)]
+    [MustHavePermission(FSHAction.View, FSHResource.UnitsOfMeasurements)]
     [OpenApiOperation("Get units of measurment details.", "")]
     public Task<UnitOfMeasurementDto> GetAsync(Guid id)
     {
@@ -24,7 +24,7 @@ public class UnitsOfMeasurementController : VersionedApiController
     }
 
     [HttpPost]
-    [MustHavePermission(FSHAction.Create, FSHResource.UnitsOfMeasurement)]
+    [MustHavePermission(FSHAction.Create, FSHResource.UnitsOfMeasurements)]
     [OpenApiOperation("Create a new Unit of measurement.", "")]
     public Task<Guid> CreateAsync(CreateUnitOfMeasurementRequest request)
     {
@@ -32,7 +32,7 @@ public class UnitsOfMeasurementController : VersionedApiController
     }
 
     [HttpPut("{id:guid}")]
-    [MustHavePermission(FSHAction.Update, FSHResource.UnitsOfMeasurement)]
+    [MustHavePermission(FSHAction.Update, FSHResource.UnitsOfMeasurements)]
     [OpenApiOperation("Update a Unit of Measurement.", "")]
     public async Task<ActionResult<Guid>> UpdateAsync(UpdateUnitOfMeasurementRequest request, Guid id)
     {
@@ -42,7 +42,7 @@ public class UnitsOfMeasurementController : VersionedApiController
     }
 
     [HttpDelete("{id:guid}")]
-    [MustHavePermission(FSHAction.Delete, FSHResource.UnitsOfMeasurement)]
+    [MustHavePermission(FSHAction.Delete, FSHResource.UnitsOfMeasurements)]
     [OpenApiOperation("Delete a Unit of Measurement.", "")]
     public Task<Guid> DeleteAsync(Guid id)
     {

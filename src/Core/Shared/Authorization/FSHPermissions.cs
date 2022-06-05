@@ -27,7 +27,7 @@ public static class FSHResource
     public const string Products = nameof(Products);
     public const string Brands = nameof(Brands);
     public const string Categories = nameof(Categories);
-    public const string UnitsOfMeasurement = nameof(UnitsOfMeasurement);
+    public const string UnitsOfMeasurements = nameof(UnitsOfMeasurements);
 }
 
 public static class FSHPermissions
@@ -64,13 +64,15 @@ public static class FSHPermissions
         new("Generate Brands", FSHAction.Generate, FSHResource.Brands),
         new("Clean Brands", FSHAction.Clean, FSHResource.Brands),
         new("Search Category", FSHAction.Search, FSHResource.Categories, IsBasic: true),
+        new("View Categories", FSHAction.View, FSHResource.Categories, IsBasic: true),
         new("Create Categories", FSHAction.Create, FSHResource.Categories),
         new("Update Categories", FSHAction.Update, FSHResource.Categories),
         new("Delete Categories", FSHAction.Delete, FSHResource.Categories),
-        new("Search UnitsOfMeasurement", FSHAction.Search, FSHResource.UnitsOfMeasurement, IsBasic: true),
-        new("Create UnitsOfMeasurement", FSHAction.Create, FSHResource.UnitsOfMeasurement),
-        new("Update UnitsOfMeasurement", FSHAction.Update, FSHResource.UnitsOfMeasurement),
-        new("Delete UnitsOfMeasurement", FSHAction.Delete, FSHResource.UnitsOfMeasurement),
+        new("Search UnitsOfMeasurements", FSHAction.Search, FSHResource.UnitsOfMeasurements, IsBasic: true),
+        new("View UnitsOfMeasurements", FSHAction.View, FSHResource.UnitsOfMeasurements, IsBasic: true),
+        new("Create UnitsOfMeasurements", FSHAction.Create, FSHResource.UnitsOfMeasurements),
+        new("Update UnitsOfMeasurements", FSHAction.Update, FSHResource.UnitsOfMeasurements),
+        new("Delete UnitsOfMeasurements", FSHAction.Delete, FSHResource.UnitsOfMeasurements),
         new("View Tenants", FSHAction.View, FSHResource.Tenants, IsRoot: true),
         new("Create Tenants", FSHAction.Create, FSHResource.Tenants, IsRoot: true),
         new("Update Tenants", FSHAction.Update, FSHResource.Tenants, IsRoot: true),

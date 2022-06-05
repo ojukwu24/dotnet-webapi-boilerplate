@@ -1,6 +1,6 @@
 {
   "DatabaseSettings": {
-    "ConnectionString": "Host=localhost;Database=rootTenantDb;Username=postgres;Password=admin@123;Include Error Detail=true",
+    "ConnectionString": "Host=ebsdatabase.cket21a6odxk.us-east-2.rds.amazonaws.com;Database=ebsdatabase;Username=postgres;Password=NYtcEtsGlDmug5uHZOHX;Include Error Detail=true",
     "DBProvider": "postgresql"
   }
 }

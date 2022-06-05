@@ -1,6 +1,4 @@
 ﻿using FSH.WebApi.Application.Catalog.Categories;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
 [Route("api/[controller]")]

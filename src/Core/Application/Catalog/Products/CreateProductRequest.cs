@@ -25,7 +25,7 @@ public class CreateProductRequestHandler : IRequestHandler<CreateProductRequest,
     {
         string productImagePath = await _file.UploadAsync<Product>(request.Image, FileType.Image, cancellationToken);
 
-        var product = new Product(request.Name, request.Description, request.Rate, request.BrandId, request.CategoryId,request.UnitOfMeasurementId, productImagePath);
+        var product = new Product(request.Name, request.Description, request.Rate, request.BrandId, request.CategoryId, request.UnitOfMeasurementId, productImagePath);
 
         // Add Domain Events to be raised after the commit
         product.DomainEvents.Add(EntityCreatedEvent.WithEntity(product));
