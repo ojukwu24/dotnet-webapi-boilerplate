@@ -20,8 +20,8 @@
       "WorkerCount": 5
     },
     "Storage": {
-      "StorageProvider": "mssql",
-      "ConnectionString": "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=fullStackHeroDb;Integrated Security=True;MultipleActiveResultSets=True",
+      "StorageProvider": "postgresql",
+      "ConnectionString": "Host=ebs-test-database.ckbx1q8nlouk.us-east-1.rds.amazonaws.com;Database=ebs-test-database;Username=postgres;Password=Royal_247;Include Error Detail=true",
       "Options": {
         "CommandBatchMaxTimeout": "00:05:00",
         "QueuePollInterval": "00:00:01",
