@@ -1,6 +1,6 @@
 {
   "DatabaseSettings": {
-    "ConnectionString": "Host=ebsdatabase.cket21a6odxk.us-east-2.rds.amazonaws.com;Database=ebsdatabase;Username=postgres;Password=NYtcEtsGlDmug5uHZOHX;Include Error Detail=true",
+    "ConnectionString": "Host=ebs-test-database.ckbx1q8nlouk.us-east-1.rds.amazonaws.com;Database=ebs-test-database;Username=postgres;Password=Royal_247;Include Error Detail=true",
     "DBProvider": "postgresql"
   }
 }
