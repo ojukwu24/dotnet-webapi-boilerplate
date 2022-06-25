@@ -28,6 +28,7 @@ public static class FSHResource
     public const string Brands = nameof(Brands);
     public const string Categories = nameof(Categories);
     public const string UnitsOfMeasurements = nameof(UnitsOfMeasurements);
+    public const string UnitsOfMeasurementsConversion = nameof(UnitsOfMeasurementsConversion);
 }
 
 public static class FSHPermissions
@@ -73,6 +74,11 @@ public static class FSHPermissions
         new("Create UnitsOfMeasurements", FSHAction.Create, FSHResource.UnitsOfMeasurements),
         new("Update UnitsOfMeasurements", FSHAction.Update, FSHResource.UnitsOfMeasurements),
         new("Delete UnitsOfMeasurements", FSHAction.Delete, FSHResource.UnitsOfMeasurements),
+        new("Search UnitsOfMeasurementsConversion", FSHAction.Search, FSHResource.UnitsOfMeasurementsConversion, IsBasic: true),
+        new("View UnitsOfMeasurementsConversion", FSHAction.View, FSHResource.UnitsOfMeasurementsConversion, IsBasic: true),
+        new("Create UnitsOfMeasurementsConversion", FSHAction.Create, FSHResource.UnitsOfMeasurementsConversion),
+        new("Update UnitsOfMeasurementsConversion", FSHAction.Update, FSHResource.UnitsOfMeasurementsConversion),
+        new("Delete UnitsOfMeasurementsConversion", FSHAction.Delete, FSHResource.UnitsOfMeasurementsConversion),
         new("View Tenants", FSHAction.View, FSHResource.Tenants, IsRoot: true),
         new("Create Tenants", FSHAction.Create, FSHResource.Tenants, IsRoot: true),
         new("Update Tenants", FSHAction.Update, FSHResource.Tenants, IsRoot: true),
