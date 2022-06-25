@@ -23,7 +23,7 @@ public class GetUoMConversionRequestHandler : IRequestHandler<GetUoMConversionRe
     private readonly IRepository<UoMConversion> _repository;
     private readonly IStringLocalizer _t;
 
-    public GetUoMConversionRequestHandler(IRepository<Category> repository, IStringLocalizer<GetUoMConversionRequestHandler> localizer) => (_repository, _t) = (repository, localizer);
+    public GetUoMConversionRequestHandler(IRepository<UoMConversion> repository, IStringLocalizer<GetUoMConversionRequestHandler> localizer) => (_repository, _t) = (repository, localizer);
 
     public async Task<UoMConversionDto> Handle(GetUoMConversionRequest request, CancellationToken cancellationToken) =>
         await _repository.GetBySpecAsync(
