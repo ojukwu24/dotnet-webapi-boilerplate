@@ -27,7 +27,7 @@ public class DeleteUnitOfMeasurementRequestHandler : IRequestHandler<DeleteUnitO
         var uom = await _repository.GetByIdAsync(request.Id, cancellationToken);
        _ = uom ?? throw new NotFoundException(_t["Unit of Measurement {0} Not Found."]);
        await _repository.DeleteAsync(uom, cancellationToken);
-
-       return request.Id;
+        
+        return request.Id;
     }
 }

@@ -2,7 +2,7 @@ namespace FSH.WebApi.Domain.Catalog;
 
 public class Product : AuditableEntity, IAggregateRoot
 {
-    public string Name { get; private set; } = default!;
+    public string Name { get; private set; }
     public string? Description { get; private set; }
     public decimal Rate { get; private set; }
     public string? ImagePath { get; private set; }

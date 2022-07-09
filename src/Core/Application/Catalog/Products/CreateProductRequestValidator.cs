@@ -2,8 +2,7 @@ namespace FSH.WebApi.Application.Catalog.Products;
 
 public class CreateProductRequestValidator : CustomValidator<CreateProductRequest>
 {
-    public CreateProductRequestValidator(IReadRepository<Product> productRepo, IReadRepository<Brand> brandRepo,
-        IReadRepository<Category> categoryRepo, IReadRepository<UnitOfMeasurement> uomRepo, IStringLocalizer<CreateProductRequestValidator> T)
+    public CreateProductRequestValidator(IReadRepository<Product> productRepo, IReadRepository<Brand> brandRepo,IReadRepository<Category> categoryRepo, IReadRepository<UnitOfMeasurement> uomRepo, IStringLocalizer<CreateProductRequestValidator> T)
     {
         RuleFor(p => p.Name)
             .NotEmpty()

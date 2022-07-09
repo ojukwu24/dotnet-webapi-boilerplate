@@ -14,7 +14,7 @@ namespace FSH.WebApi.Application.Catalog.UoMConversions
                 .WithMessage((_,fromUnitId) => T["Conversion for the selected product and units already exists"]);
 
             RuleFor(x => x.Multiplier)
-            .GreaterThanOrEqualTo(1);
+            .GreaterThanOrEqualTo(0);
 
             RuleFor(p => p.ToUoMId)
             .NotEmpty()

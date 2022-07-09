@@ -1,6 +1,6 @@
 {
   "DatabaseSettings": {
-    "ConnectionString": "Host=ebs-test-database.ckbx1q8nlouk.us-east-1.rds.amazonaws.com:5432;Database=ebs-test-database;Username=postgres;Password=Royal_247;Include Error Detail=true",
-    "DBProvider": "postgresql"
+    "DBProvider": "mssql",
+    "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdb;User Id=db_a89bfe_ebsdb_admin;Password=qwer@123;MultipleActiveResultSets=True"
   }
 }

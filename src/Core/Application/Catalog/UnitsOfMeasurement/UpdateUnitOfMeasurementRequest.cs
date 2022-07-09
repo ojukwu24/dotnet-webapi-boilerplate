@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FSH.WebApi.Application.Catalog.UnitsOfMeasurement;
+﻿namespace FSH.WebApi.Application.Catalog.UnitsOfMeasurement;
 public class UpdateUnitOfMeasurementRequest : IRequest<Guid>
 {
     public Guid Id { get; set; }
