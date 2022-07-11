@@ -21,7 +21,7 @@
     },
     "Storage": {
       "StorageProvider": "mssql",
-      "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdb;User Id=db_a89bfe_ebsdb_admin;Password=qwer@123;MultipleActiveResultSets=True",
+      "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdbase;User Id=db_a89bfe_ebsdbase_admin;Password=admin@123;MultipleActiveResultSets=True",
       "Options": {
         "CommandBatchMaxTimeout": "00:05:00",
         "QueuePollInterval": "00:00:01",

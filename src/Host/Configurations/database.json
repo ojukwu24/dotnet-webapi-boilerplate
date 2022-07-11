@@ -1,11 +1,8 @@
 {
   "DatabaseSettings": {
     "DBProvider": "mssql",
-    "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdb;User Id=db_a89bfe_ebsdb_admin;Password=qwer@123;MultipleActiveResultSets=True"
+    "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdbase;User Id=db_a89bfe_ebsdbase_admin;Password=admin@123;MultipleActiveResultSets=True"
   }
 
-  //"DatabaseSettings": {
-  //  "ConnectionString": "Host=localhost;Database=ebsdb;Username=postgres;Password=admin@123;Include Error Detail=true",
-  //  "DBProvider": "postgresql"
-  //}
+
 }
