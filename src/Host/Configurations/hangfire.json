@@ -20,8 +20,8 @@
       "WorkerCount": 5
     },
     "Storage": {
-      "StorageProvider": "mssql",
-      "ConnectionString": "Data Source=SQL5080.site4now.net;Initial Catalog=db_a89bfe_ebsdbase;User Id=db_a89bfe_ebsdbase_admin;Password=admin@123;MultipleActiveResultSets=True",
+      "StorageProvider": "postgresql",
+      "ConnectionString": "Host=db-postgresql-nyc3-86976-do-user-11995406-0.b.db.ondigitalocean.com:25060;Database=ebsdb;Username=doadmin;Password=AVNS_myMVFpVIlPm4rvx5hPk;sslmode=Require;Trust Server Certificate=true;Include Error Detail=true",
       "Options": {
         "CommandBatchMaxTimeout": "00:05:00",
         "QueuePollInterval": "00:00:01",
